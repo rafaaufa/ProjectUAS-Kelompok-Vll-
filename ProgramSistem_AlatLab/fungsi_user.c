@@ -25,3 +25,4 @@ void USER_MENU(data alat[],int *count){
             case 4 :USER_LIHATDIPINJAM(alat,*count);
                     break;
             case 5 :system("cls");
+                    SIMPAN_FILE(alat,*count);
