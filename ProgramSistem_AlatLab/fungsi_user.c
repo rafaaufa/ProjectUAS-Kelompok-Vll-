@@ -26,3 +26,5 @@ void USER_MENU(data alat[],int *count){
                     break;
             case 5 :system("cls");
                     SIMPAN_FILE(alat,*count);
+                    printf("\nTerima Kasih ,Program Selesai");
+                    break;
