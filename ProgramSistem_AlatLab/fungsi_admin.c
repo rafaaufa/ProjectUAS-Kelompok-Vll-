@@ -33,3 +33,8 @@ void ADMIN_MENU(data alat[],int *count){
                     break;
             default :printf("\nEror!! SILAHKAN LOGIN ULANG\n");
         }
+        if(pilihan1 != 5){ 
+        printf("\nTekan Enter untuk kembali ke menu...");
+        getchar();
+        system("cls");
+    }
