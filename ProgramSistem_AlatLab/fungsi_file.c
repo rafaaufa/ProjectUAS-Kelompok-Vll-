@@ -5,4 +5,9 @@ void SIMPAN_FILE(data alat[],int count){
     FILE *file = fopen("data.txt","w");
     if (file == NULL) {
     printf("Gagal membuka file!\n");
-    
+
+    return;
+    }
+
+    for(int i = 0; i < count; i++){
+        
