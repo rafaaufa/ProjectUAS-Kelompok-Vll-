@@ -22,3 +22,5 @@ void USER_MENU(data alat[],int *count){
                     break;
             case 3 :USER_LIHATTERSEDIA(alat,*count);
                     break;
+            case 4 :USER_LIHATDIPINJAM(alat,*count);
+                    break;
