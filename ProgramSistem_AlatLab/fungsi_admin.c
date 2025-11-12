@@ -17,3 +17,19 @@ void ADMIN_MENU(data alat[],int *count){
         scanf("%d",&pilihan1);
         getchar();
         printf("\n------------------------------\n");
+        switch (pilihan1){
+            case 1 :ADMIN_TAMBAHDATA(alat,count);
+                    TAMBAH_FILE(alat,count);
+                    break;
+            case 2 :ADMIN_LIHATDATA(alat,*count);
+                    break;
+            case 3 :ADMIN_EDITDATA(alat,count);
+                    break;
+            case 4 :ADMIN_HAPUSDATA(alat,count);
+                    break;
+            case 5 :system("cls");
+                    SIMPAN_FILE(alat,*count);
+                    printf("\nTerima Kasih ,Program Selesai");
+                    break;
+            default :printf("\nEror!! SILAHKAN LOGIN ULANG\n");
+        }
