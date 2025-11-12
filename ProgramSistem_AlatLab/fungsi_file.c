@@ -10,4 +10,11 @@ void SIMPAN_FILE(data alat[],int count){
     }
 
     for(int i = 0; i < count; i++){
-        
+        fprintf(file,"%u|%s|%s|%s|%u|%u|%u\n", alat[i].id,
+            alat[i].nama_alat,
+            alat[i].merek,
+            alat[i].model,
+            alat[i].tahunproduksi,
+            alat[i].jumlah,
+            alat[i].dipinjam);
+            
