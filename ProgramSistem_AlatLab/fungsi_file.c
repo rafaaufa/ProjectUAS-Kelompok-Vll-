@@ -17,4 +17,6 @@ void SIMPAN_FILE(data alat[],int count){
             alat[i].tahunproduksi,
             alat[i].jumlah,
             alat[i].dipinjam);
-            
+    }
+    fclose(file);
+}
