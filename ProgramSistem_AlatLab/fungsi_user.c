@@ -24,3 +24,4 @@ void USER_MENU(data alat[],int *count){
                     break;
             case 4 :USER_LIHATDIPINJAM(alat,*count);
                     break;
+            case 5 :system("cls");
