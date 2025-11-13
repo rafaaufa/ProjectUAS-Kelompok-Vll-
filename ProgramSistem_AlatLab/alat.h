@@ -5,4 +5,9 @@
 #include <string.h>
 #include <stdlib.h>
 
+typedef struct{
+    unsigned int id;
+    char nama_alat[50];
+}data;
+
 #endif
