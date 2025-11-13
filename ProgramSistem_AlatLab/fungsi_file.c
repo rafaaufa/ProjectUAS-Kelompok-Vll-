@@ -26,4 +26,8 @@ void LIHAT_FILE(data alat[],int *count){
     if (file == NULL) {
     printf("Gagal membuka file!\n");
     *count = 0;
-    
+     return;
+    }
+    int i = 0;
+    while(fscanf(file,"%u|%[^|]|%[^|]|%[^|]|%u|%u|%u\n", 
+        
