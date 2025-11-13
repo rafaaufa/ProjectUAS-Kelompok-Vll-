@@ -30,4 +30,13 @@ void LIHAT_FILE(data alat[],int *count){
     }
     int i = 0;
     while(fscanf(file,"%u|%[^|]|%[^|]|%[^|]|%u|%u|%u\n", 
-        
+         &alat[i].id,
+        alat[i].nama_alat,
+        alat[i].merek,
+        alat[i].model,
+        &alat[i].tahunproduksi,
+        &alat[i].jumlah,
+        &alat[i].dipinjam)==7)
+        {
+            i++;
+        }
