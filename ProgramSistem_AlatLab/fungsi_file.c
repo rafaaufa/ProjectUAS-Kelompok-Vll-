@@ -23,4 +23,7 @@ void SIMPAN_FILE(data alat[],int count){
 
 void LIHAT_FILE(data alat[],int *count){    
     FILE *file = fopen("data.txt","r");
+    if (file == NULL) {
+    printf("Gagal membuka file!\n");
+    *count = 0;
     
