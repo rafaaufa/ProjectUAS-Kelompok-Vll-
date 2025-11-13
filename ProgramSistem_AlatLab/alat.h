@@ -8,6 +8,8 @@
 typedef struct{
     unsigned int id;
     char nama_alat[50];
+    char merek[50];
+    char model[50];
 }data;
 
 #endif
