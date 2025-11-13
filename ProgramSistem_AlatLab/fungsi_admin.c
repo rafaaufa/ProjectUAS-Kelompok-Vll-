@@ -45,3 +45,8 @@ void ADMIN_TAMBAHDATA(data alat[],int *count){
     printf("Masukkan ID : ");
     scanf("%d",&alat[*count].id);
     getchar();
+    printf("Silahkan Masukkan Nama Alat : ");
+    fgets(alat[*count].nama_alat,sizeof(alat[*count].nama_alat),stdin);   
+    alat[*count].nama_alat[strcspn(alat[*count].nama_alat,"\n")] = '\0';
+
+    
