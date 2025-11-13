@@ -12,6 +12,7 @@ typedef struct{
     char model[50];
     unsigned int tahunproduksi;
     unsigned int jumlah;
+    unsigned int dipinjam;
 }data;
 
 #endif
