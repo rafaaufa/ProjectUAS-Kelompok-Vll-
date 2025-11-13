@@ -7,6 +7,7 @@ void bersihkan_kata(char *kata) {
     int j = 0;
 
     for (int i = 0; kata[i] != '\0'; i++) {
+        if (isalpha(kata[i]) || kata[i] == '\'' || kata[i] == '-') {
 }
 int main(){
     char kata[200];
