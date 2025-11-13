@@ -40,3 +40,8 @@ void ADMIN_MENU(data alat[],int *count){
     }
     }while(pilihan1 != 5);
 }
+
+void ADMIN_TAMBAHDATA(data alat[],int *count){
+    printf("Masukkan ID : ");
+    scanf("%d",&alat[*count].id);
+    getchar();
