@@ -37,3 +37,12 @@ void USER_MENU(data alat[],int *count){
     }
     }while(pilihan2 != 5);
 }
+
+void USER_PEMINJAMAN(data alat[],int *count){
+    int id;
+    printf("Masukkan ID Alat Yang Ingin Dipinjam : ");
+    scanf("%d",&id);
+    if(id <= 0 || id > *count){
+        printf("Data Tidak Valid");
+        return;
+    }
