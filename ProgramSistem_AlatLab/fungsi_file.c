@@ -20,3 +20,7 @@ void SIMPAN_FILE(data alat[],int count){
     }
     fclose(file);
 }
+
+void LIHAT_FILE(data alat[],int *count){    
+    FILE *file = fopen("data.txt","r");
+    
