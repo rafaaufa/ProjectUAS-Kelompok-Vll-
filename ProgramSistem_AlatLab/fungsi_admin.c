@@ -49,4 +49,8 @@ void ADMIN_TAMBAHDATA(data alat[],int *count){
     fgets(alat[*count].nama_alat,sizeof(alat[*count].nama_alat),stdin);   
     alat[*count].nama_alat[strcspn(alat[*count].nama_alat,"\n")] = '\0';
 
+    printf("Silahkan Masukkan Merek : ");
+    fgets(alat[*count].merek,sizeof(alat[*count].merek),stdin);    
+    alat[*count].merek[strcspn(alat[*count].merek,"\n")] = '\0';
+
     
