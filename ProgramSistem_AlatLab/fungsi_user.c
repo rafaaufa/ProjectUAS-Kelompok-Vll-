@@ -35,3 +35,5 @@ void USER_MENU(data alat[],int *count){
         getchar();
         system("cls");
     }
+    }while(pilihan2 != 5);
+}
