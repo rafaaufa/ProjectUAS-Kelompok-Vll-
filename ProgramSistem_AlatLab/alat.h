@@ -10,6 +10,8 @@ typedef struct{
     char nama_alat[50];
     char merek[50];
     char model[50];
+    unsigned int tahunproduksi;
+    unsigned int jumlah;
 }data;
 
 #endif
