@@ -2,6 +2,7 @@
 #include <string.h>
 #include <ctype.h>
 
+void bersihkan_kata(char *kata) {}
 int main(){
     char kata[200];
     FILE *file1 = fopen("lirik.txt", "r");
