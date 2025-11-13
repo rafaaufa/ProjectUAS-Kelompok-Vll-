@@ -60,4 +60,9 @@ void ADMIN_TAMBAHDATA(data alat[],int *count){
     printf("Silahkan Masukkan Tahun Produksi : ");
     scanf("%d",&alat[*count].tahunproduksi);
     getchar();
-    
+    printf("Silahkan Masukkan Jumlah : ");
+    scanf("%d",&alat[*count].jumlah);   
+    alat[*count].dipinjam = 0;
+    (*count)++;
+}
+
