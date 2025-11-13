@@ -57,4 +57,7 @@ void ADMIN_TAMBAHDATA(data alat[],int *count){
     fgets(alat[*count].model,sizeof(alat[*count].model),stdin);    
     alat[*count].model[strcspn(alat[*count].model,"\n")] = '\0';
 
+    printf("Silahkan Masukkan Tahun Produksi : ");
+    scanf("%d",&alat[*count].tahunproduksi);
+    getchar();
     
