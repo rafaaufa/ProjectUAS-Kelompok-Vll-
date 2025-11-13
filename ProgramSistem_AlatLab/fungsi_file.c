@@ -40,3 +40,6 @@ void LIHAT_FILE(data alat[],int *count){
         {
             i++;
         }
+    *count = i;
+    fclose(file);
+}
