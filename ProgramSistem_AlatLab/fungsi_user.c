@@ -28,3 +28,5 @@ void USER_MENU(data alat[],int *count){
                     SIMPAN_FILE(alat,*count);
                     printf("\nTerima Kasih ,Program Selesai");
                     break;
+                      default : printf("Eror!! SILAHKAN LOGIN ULANG");
+        }
