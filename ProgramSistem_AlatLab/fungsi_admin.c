@@ -67,4 +67,8 @@ void ADMIN_TAMBAHDATA(data alat[],int *count){
 }
 
 void ADMIN_LIHATDATA(data alat[],int count){
-        
+    if (count == 0){
+        printf("Belum Ada Data");
+        return;
+    } 
+    
