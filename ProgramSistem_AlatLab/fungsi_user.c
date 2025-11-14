@@ -66,3 +66,6 @@ void USER_PENGEMBALIAN(data alat[],int *count){
      if (alat[id-1].dipinjam == 0){
         printf("Alat belum dipinjam!\n");
     } else {
+         alat[id-1].dipinjam = 0; 
+        printf("Alat berhasil dikembalikan!\n");
+    }
