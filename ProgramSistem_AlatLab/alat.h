@@ -25,5 +25,7 @@ void SIMPAN_FILE(data alat[], int count);
 void TAMBAH_FILE(data alat[], int *count);
 void LIHAT_FILE(data alat[], int *count);
 
+void USER_MENU(data alat[],int *count);
+void USER_PEMINJAMAN(data alat[],int *count);
 
 #endif
