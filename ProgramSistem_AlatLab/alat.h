@@ -15,4 +15,6 @@ typedef struct{
     unsigned int dipinjam;
 }data;
 
+void ADMIN_MENU(data alat[], int *count);
+
 #endif
