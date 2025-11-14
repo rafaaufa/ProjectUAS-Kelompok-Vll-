@@ -43,3 +43,6 @@ void LIHAT_FILE(data alat[],int *count){
     *count = i;
     fclose(file);
 }
+
+void TAMBAH_FILE(data alat[],int *count){
+    
