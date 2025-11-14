@@ -48,3 +48,9 @@ void USER_PEMINJAMAN(data alat[],int *count){
     }
      if (alat[id-1].dipinjam == 1){
         printf("Alat sudah dipinjam!\n");
+         } else {
+        alat[id-1].dipinjam = 1; 
+        printf("Alat Berhasil Dipinjam!\n");
+    }
+    SIMPAN_FILE(alat,*count);
+}
