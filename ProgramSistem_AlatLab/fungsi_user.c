@@ -63,3 +63,6 @@ void USER_PENGEMBALIAN(data alat[],int *count){
         printf("Data Tidak Valid");
         return;
     }
+     if (alat[id-1].dipinjam == 0){
+        printf("Alat belum dipinjam!\n");
+    } else {
