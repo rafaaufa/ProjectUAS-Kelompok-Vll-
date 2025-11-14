@@ -46,4 +46,8 @@ void LIHAT_FILE(data alat[],int *count){
 
 void TAMBAH_FILE(data alat[],int *count){
     FILE *file = fopen("data.txt","a");
+    if (file == NULL) {
+    printf("Gagal membuka file!\n");
+    return;
+    }
     
