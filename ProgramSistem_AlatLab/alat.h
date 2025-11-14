@@ -27,5 +27,7 @@ void LIHAT_FILE(data alat[], int *count);
 
 void USER_MENU(data alat[],int *count);
 void USER_PEMINJAMAN(data alat[],int *count);
+void USER_PENGEMBALIAN(data alat[],int *count);
+void USER_LIHATTERSEDIA(data alat[],int count);
 
 #endif
