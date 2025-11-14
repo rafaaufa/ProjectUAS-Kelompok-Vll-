@@ -50,4 +50,12 @@ void TAMBAH_FILE(data alat[],int *count){
     printf("Gagal membuka file!\n");
     return;
     }
+     int i = (*count) - 1;
+    fprintf(file,"%u|%s|%s|%s|%u|%u|%u\n", alat[i].id,
+        alat[i].nama_alat,
+        alat[i].merek,
+        alat[i].model,
+        alat[i].tahunproduksi,
+        alat[i].jumlah,
+        alat[i].dipinjam);
     
