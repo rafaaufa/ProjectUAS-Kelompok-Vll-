@@ -66,3 +66,5 @@ void ADMIN_TAMBAHDATA(data alat[],int *count){
     (*count)++;
 }
 
+void ADMIN_LIHATDATA(data alat[],int count){
+        
