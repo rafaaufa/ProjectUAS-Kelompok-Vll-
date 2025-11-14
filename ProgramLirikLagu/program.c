@@ -10,6 +10,7 @@ void bersihkan_kata(char *kata) {
         if (isalpha(kata[i]) || kata[i] == '\'' || kata[i] == '-') {
             sementara[j] = tolower(kata[i]);
             j++;
+        }
 }
 int main(){
     char kata[200];
