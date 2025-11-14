@@ -11,7 +11,8 @@ void bersihkan_kata(char *kata) {
             sementara[j] = tolower(kata[i]);
             j++;
         }
-}
+    }
+    sementara[j] = '\0';
 int main(){
     char kata[200];
     FILE *file1 = fopen("lirik.txt", "r");
