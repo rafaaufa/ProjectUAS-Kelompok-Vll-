@@ -16,5 +16,7 @@ typedef struct{
 }data;
 
 void ADMIN_MENU(data alat[], int *count);
+void ADMIN_TAMBAHDATA(data alat[], int *count);
+
 
 #endif
