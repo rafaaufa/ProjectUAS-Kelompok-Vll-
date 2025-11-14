@@ -77,3 +77,12 @@ void ADMIN_LIHATDATA(data alat[],int count){
         "ID", "Nama Alat", "Merek", "Model", "Tahun", "Jumlah");
     printf("---------------------------------------------------------------------------------\n");
     for(int i = 0; i < count; i++) {
+        printf("| %-5u| %-20s| %-15s| %-15s| %-6u| %-7u|\n",
+            alat[i].id,
+            alat[i].nama_alat,
+            alat[i].merek,
+            alat[i].model,
+            alat[i].tahunproduksi,
+            alat[i].jumlah);
+    }
+    
