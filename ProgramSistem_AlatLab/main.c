@@ -5,5 +5,8 @@ int main(int argc,int *argv[]) {
     int pilihan2;
     data alat[100];
     int count = 0;
+    
+    LIHAT_FILE(alat, &count);
+
 
 }
