@@ -71,4 +71,5 @@ void ADMIN_LIHATDATA(data alat[],int count){
         printf("Belum Ada Data");
         return;
     } 
+    printf("\n\tDAFTAR ALAT YANG TERSEDIA\n");
     
