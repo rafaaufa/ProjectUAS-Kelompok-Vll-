@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "alat.h"
 
 int main() {
     char login[10];
