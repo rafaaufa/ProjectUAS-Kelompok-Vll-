@@ -54,3 +54,12 @@ void USER_PEMINJAMAN(data alat[],int *count){
     }
     SIMPAN_FILE(alat,*count);
 }
+
+void USER_PENGEMBALIAN(data alat[],int *count){
+    int id;
+    printf("Masukkan ID Alat Yang Ingin Dikembalikan : ");
+    scanf("%d",&id);
+    if(id <= 0 || id > *count){
+        printf("Data Tidak Valid");
+        return;
+    }
