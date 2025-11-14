@@ -72,4 +72,5 @@ void ADMIN_LIHATDATA(data alat[],int count){
         return;
     } 
     printf("\n\tDAFTAR ALAT YANG TERSEDIA\n");
+    printf("---------------------------------------------------------------------------------\n");
     
