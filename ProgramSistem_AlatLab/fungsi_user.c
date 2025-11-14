@@ -69,3 +69,5 @@ void USER_PENGEMBALIAN(data alat[],int *count){
          alat[id-1].dipinjam = 0; 
         printf("Alat berhasil dikembalikan!\n");
     }
+    SIMPAN_FILE(alat,*count);
+}
