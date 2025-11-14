@@ -85,4 +85,6 @@ void ADMIN_LIHATDATA(data alat[],int count){
             alat[i].tahunproduksi,
             alat[i].jumlah);
     }
-    
+    printf("---------------------------------------------------------------------------------\n");
+}
+
