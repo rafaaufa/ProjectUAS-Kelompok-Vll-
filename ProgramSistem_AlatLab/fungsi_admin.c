@@ -98,4 +98,7 @@ void ADMIN_EDITDATA(data alat[],int *count){
         if(alat[i].id == edit){
             idnya = 1;
             printf("Silahkan Masukkan Nama Alat : ");
+            fgets(alat[i].nama_alat,sizeof(alat[i].nama_alat),stdin);   
+            alat[i].nama_alat[strcspn(alat[i].nama_alat,"\n")] = 0;
+
             
