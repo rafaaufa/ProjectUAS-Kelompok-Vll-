@@ -102,4 +102,7 @@ void ADMIN_EDITDATA(data alat[],int *count){
             alat[i].nama_alat[strcspn(alat[i].nama_alat,"\n")] = 0;
 
             printf("Silahkan Masukkan Merek : ");
+            fgets(alat[i].merek,sizeof(alat[i].merek),stdin);    
+            alat[i].merek[strcspn(alat[i].merek,"\n")] = 0;
+
             
