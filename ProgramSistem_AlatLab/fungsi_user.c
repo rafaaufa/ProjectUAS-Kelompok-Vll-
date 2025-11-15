@@ -82,3 +82,11 @@ void USER_LIHATTERSEDIA(data alat[],int count){
       for (int i = 0; i < count; i++){
         if (alat[i].dipinjam == 0){
             printf("| %-5u| %-20s| %-15s| %-15s| %-6u| %-7u|\n",
+                alat[i].id,
+                alat[i].nama_alat,
+                alat[i].merek,
+                alat[i].model,
+                alat[i].tahunproduksi,
+                alat[i].jumlah);
+        }
+    }
