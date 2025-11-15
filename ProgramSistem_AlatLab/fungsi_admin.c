@@ -109,4 +109,7 @@ void ADMIN_EDITDATA(data alat[],int *count){
             fgets(alat[i].model,sizeof(alat[i].model),stdin);    
             alat[i].model[strcspn(alat[i].model,"\n")] = 0;
 
+            printf("Silahkan Masukkan Tahun Produksi : ");
+            scanf("%d",&alat[i].tahunproduksi);
+            getchar();
             
