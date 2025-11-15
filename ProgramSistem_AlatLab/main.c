@@ -15,4 +15,8 @@ int main(int argc,int *argv[]) {
     char *username = argv[1];
     char *password = argv[2];
 
+    if (strcmp(username, "admin") == 0 && strcmp(password, "123") == 0) {
+        printf("Login sebagai Admin berhasil!\n");
+    }
+
 }
