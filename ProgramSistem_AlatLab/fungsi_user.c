@@ -48,3 +48,26 @@ void USER_PEMINJAMAN(data alat[],int *count){
     }
      if (alat[id-1].dipinjam == 1){
         printf("Alat sudah dipinjam!\n");
+         } else {
+        alat[id-1].dipinjam = 1; 
+        printf("Alat Berhasil Dipinjam!\n");
+    }
+    SIMPAN_FILE(alat,*count);
+}
+
+void USER_PENGEMBALIAN(data alat[],int *count){
+    int id;
+    printf("Masukkan ID Alat Yang Ingin Dikembalikan : ");
+    scanf("%d",&id);
+    if(id <= 0 || id > *count){
+        printf("Data Tidak Valid");
+        return;
+    }
+     if (alat[id-1].dipinjam == 0){
+        printf("Alat belum dipinjam!\n");
+    } else {
+         alat[id-1].dipinjam = 0; 
+        printf("Alat berhasil dikembalikan!\n");
+    }
+    SIMPAN_FILE(alat,*count);
+}

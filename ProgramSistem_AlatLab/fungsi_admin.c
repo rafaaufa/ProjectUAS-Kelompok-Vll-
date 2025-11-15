@@ -66,3 +66,25 @@ void ADMIN_TAMBAHDATA(data alat[],int *count){
     (*count)++;
 }
 
+void ADMIN_LIHATDATA(data alat[],int count){
+    if (count == 0){
+        printf("Belum Ada Data");
+        return;
+    } 
+    printf("\n\tDAFTAR ALAT YANG TERSEDIA\n");
+    printf("---------------------------------------------------------------------------------\n");
+    printf("| %-5s| %-20s| %-15s| %-15s| %-6s| %-7s|\n",
+        "ID", "Nama Alat", "Merek", "Model", "Tahun", "Jumlah");
+    printf("---------------------------------------------------------------------------------\n");
+    for(int i = 0; i < count; i++) {
+        printf("| %-5u| %-20s| %-15s| %-15s| %-6u| %-7u|\n",
+            alat[i].id,
+            alat[i].nama_alat,
+            alat[i].merek,
+            alat[i].model,
+            alat[i].tahunproduksi,
+            alat[i].jumlah);
+    }
+    printf("---------------------------------------------------------------------------------\n");
+}
+

@@ -43,3 +43,20 @@ void LIHAT_FILE(data alat[],int *count){
     *count = i;
     fclose(file);
 }
+
+void TAMBAH_FILE(data alat[],int *count){
+    FILE *file = fopen("data.txt","a");
+    if (file == NULL) {
+    printf("Gagal membuka file!\n");
+    return;
+    }
+     int i = (*count) - 1;
+    fprintf(file,"%u|%s|%s|%s|%u|%u|%u\n", alat[i].id,
+        alat[i].nama_alat,
+        alat[i].merek,
+        alat[i].model,
+        alat[i].tahunproduksi,
+        alat[i].jumlah,
+        alat[i].dipinjam);
+    fclose(file);
+}
