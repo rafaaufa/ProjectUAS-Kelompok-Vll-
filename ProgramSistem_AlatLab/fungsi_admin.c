@@ -88,3 +88,10 @@ void ADMIN_LIHATDATA(data alat[],int count){
     printf("---------------------------------------------------------------------------------\n");
 }
 
+void ADMIN_EDITDATA(data alat[],int *count){
+    int edit;
+    int idnya = 0;
+    printf("Masukkan ID Yang Ingin Diedit : ");
+    scanf("%d",&edit);
+    getchar();
+    
