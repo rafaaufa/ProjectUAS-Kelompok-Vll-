@@ -131,3 +131,10 @@ void ADMIN_HAPUSDATA(data alat[],int *count){
     scanf("%d",&edit);
 
     
+    for(int i = 0 ; i < *count ; i++){
+        if(alat[i].id == edit){
+            idnya = 1;
+            for(int j = i ; j < (*count)-1; j++){
+            alat[j] = alat[j+1];    
+        }
+        
