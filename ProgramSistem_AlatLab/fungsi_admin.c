@@ -114,3 +114,8 @@ void ADMIN_EDITDATA(data alat[],int *count){
             getchar();
             printf("Silahkan Masukkan Jumlah : ");
             scanf("%d",&alat[i].jumlah);
+            printf("\nData dengan ID %d berhasil diedit!\n",edit);
+            break;
+            }
+        }
+        
