@@ -22,6 +22,9 @@ int cek_duplikat(char *cek_kata, char daftar_kata[400][200], int jumlah_kata) {
             return 1;
         }
     }
+    return 0;
+}
+
 int main(){
     char kata[200];
     FILE *file1 = fopen("lirik.txt", "r");
