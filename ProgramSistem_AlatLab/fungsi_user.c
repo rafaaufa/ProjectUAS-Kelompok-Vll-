@@ -90,3 +90,5 @@ void USER_LIHATTERSEDIA(data alat[],int count){
                 alat[i].jumlah);
         }
     }
+    printf("---------------------------------------------------------------------------------\n");
+}
