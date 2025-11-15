@@ -92,3 +92,10 @@ void USER_LIHATTERSEDIA(data alat[],int count){
     }
     printf("---------------------------------------------------------------------------------\n");
 }
+
+void USER_LIHATDIPINJAM(data alat[],int count){
+    printf("\n\tDAFTAR ALAT YANG DIPINJAM\n");
+    printf("---------------------------------------------------------------------------------\n");
+    printf("| %-5s| %-20s| %-15s| %-15s| %-6s| %-7s|\n",
+        "ID", "Nama Alat", "Merek", "Model", "Tahun", "Jumlah");
+    printf("---------------------------------------------------------------------------------\n");
