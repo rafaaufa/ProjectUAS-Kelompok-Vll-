@@ -21,7 +21,12 @@ int main(int argc,int *argv[]) {
         getchar();
         ADMIN_MENU(alat,&count);
     }
-    
+    else if (strcmp(username, "user") == 0 && strcmp(password, "123") == 0) {
+        printf("Login sebagai User berhasil!\n");
+        printf("(Silahkan Tekan Enter)\n");
+        getchar();
+        USER_MENU(alat,&count);
+    }
     
 
 }
