@@ -71,3 +71,5 @@ void USER_PENGEMBALIAN(data alat[],int *count){
     }
     SIMPAN_FILE(alat,*count);
 }
+
+void USER_LIHATTERSEDIA(data alat[],int count){
