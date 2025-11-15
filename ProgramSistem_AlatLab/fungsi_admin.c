@@ -105,4 +105,5 @@ void ADMIN_EDITDATA(data alat[],int *count){
             fgets(alat[i].merek,sizeof(alat[i].merek),stdin);    
             alat[i].merek[strcspn(alat[i].merek,"\n")] = 0;
 
+            printf("Silahkan Masukkan Model : ");
             
