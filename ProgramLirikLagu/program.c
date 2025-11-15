@@ -30,7 +30,10 @@ int main(){
     char judul_baris[200];
     char kosa_kata_unik[400][200];
     int ketemu_kata_unik = 0;
+
     FILE *file1 = fopen("lirik.txt", "r");
     FILE *file2 = fopen("kosa-kata.txt", "w");
+
+    if (fgets(judul_baris, 200, file1) != NULL) {
     printf("tesss");
 }
