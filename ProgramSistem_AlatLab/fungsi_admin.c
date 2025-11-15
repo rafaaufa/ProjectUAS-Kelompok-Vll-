@@ -97,4 +97,5 @@ void ADMIN_EDITDATA(data alat[],int *count){
     for (int i = 0; i < *count ; i++){
         if(alat[i].id == edit){
             idnya = 1;
+            printf("Silahkan Masukkan Nama Alat : ");
             
