@@ -75,3 +75,5 @@ void USER_PENGEMBALIAN(data alat[],int *count){
 void USER_LIHATTERSEDIA(data alat[],int count){
      printf("\n\tDAFTAR ALAT YANG TERSEDIA\n");
       printf("---------------------------------------------------------------------------------\n");
+      printf("| %-5s| %-20s| %-15s| %-15s| %-6s| %-7s|\n",
+        "ID", "Nama Alat", "Merek", "Model", "Tahun", "Jumlah");
