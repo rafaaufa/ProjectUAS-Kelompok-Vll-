@@ -73,3 +73,4 @@ void USER_PENGEMBALIAN(data alat[],int *count){
 }
 
 void USER_LIHATTERSEDIA(data alat[],int count){
+     printf("\n\tDAFTAR ALAT YANG TERSEDIA\n");
