@@ -27,6 +27,9 @@ int cek_duplikat(char *cek_kata, char daftar_kata[400][200], int jumlah_kata) {
 
 int main(){
     char kata[200];
+    char judul_baris[200];
+    char kosa_kata_unik[400][200];
+    int ketemu_kata_unik = 0;
     FILE *file1 = fopen("lirik.txt", "r");
     FILE *file2 = fopen("kosa-kata.txt", "w");
     printf("tesss");
