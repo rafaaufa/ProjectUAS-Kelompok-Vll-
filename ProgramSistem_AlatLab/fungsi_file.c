@@ -4,7 +4,7 @@
 void SIMPAN_FILE(data alat[],int count){
     FILE *file = fopen("data.txt","w");
     if (file == NULL) {
-    printf("Gagal membuka file!\n");
+    printf("Gagal Membuka File!\n");
 
     return;
     }
@@ -24,7 +24,7 @@ void SIMPAN_FILE(data alat[],int count){
 void LIHAT_FILE(data alat[],int *count){    
     FILE *file = fopen("data.txt","r");
     if (file == NULL) {
-    printf("Gagal membuka file!\n");
+    printf("Gagal Membuka File!\n");
     *count = 0;
      return;
     }
@@ -47,7 +47,7 @@ void LIHAT_FILE(data alat[],int *count){
 void TAMBAH_FILE(data alat[],int *count){
     FILE *file = fopen("data.txt","a");
     if (file == NULL) {
-    printf("Gagal membuka file!\n");
+    printf("Gagal Membuka File!\n");
     return;
     }
      int i = (*count) - 1;

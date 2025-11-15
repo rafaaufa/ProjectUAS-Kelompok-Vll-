@@ -31,7 +31,7 @@ void USER_MENU(data alat[],int *count){
                       default : printf("Eror!! SILAHKAN LOGIN ULANG");
         }
         if(pilihan2 != 5){ 
-        printf("\nTekan Enter untuk kembali ke menu...");
+        printf("\nTekan Enter Untuk Kembali Ke Menu...");
         getchar();
         system("cls");
     }

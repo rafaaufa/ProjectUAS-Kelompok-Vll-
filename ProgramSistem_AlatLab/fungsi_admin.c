@@ -34,7 +34,7 @@ void ADMIN_MENU(data alat[],int *count){
             default :printf("\nEror!! SILAHKAN LOGIN ULANG\n");
         }
         if(pilihan1 != 5){ 
-        printf("\nTekan Enter untuk kembali ke menu...");
+        printf("\nTekan Enter Untuk Kembali Ke Menu...");
         getchar();
         system("cls");
     }
