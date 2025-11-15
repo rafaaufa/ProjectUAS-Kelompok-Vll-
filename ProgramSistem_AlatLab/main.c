@@ -27,6 +27,9 @@ int main(int argc,int *argv[]) {
         getchar();
         USER_MENU(alat,&count);
     }
-    
+     else 
+        printf("Login gagal,username atau password salah");
 
+    SIMPAN_FILE(alat, count);
+    return 0;
 }
