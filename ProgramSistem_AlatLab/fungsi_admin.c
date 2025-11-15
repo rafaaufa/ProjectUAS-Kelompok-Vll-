@@ -124,3 +124,10 @@ void ADMIN_EDITDATA(data alat[],int *count){
     SIMPAN_FILE(alat,*count);
 }
 
+void ADMIN_HAPUSDATA(data alat[],int *count){
+    int edit;
+    int idnya = 0;
+    printf("Masukkan ID Yang Ingin Dihapus : ");
+    scanf("%d",&edit);
+
+    
