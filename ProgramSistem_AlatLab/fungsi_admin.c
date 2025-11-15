@@ -137,4 +137,10 @@ void ADMIN_HAPUSDATA(data alat[],int *count){
             for(int j = i ; j < (*count)-1; j++){
             alat[j] = alat[j+1];    
         }
-        
+        (*count)--;
+        printf("Data dengan ID %d berhasil dihapus!\n", edit);
+        break; 
+        }
+    }
+
+}
