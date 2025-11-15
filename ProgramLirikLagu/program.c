@@ -16,7 +16,12 @@ void bersihkan_kata(char *kata) {
     strcpy(kata, sementara);
 }
 
-int cek_duplikat(char *cek_kata, char daftar_kata[400][200], int jumlah_kata) {}
+int cek_duplikat(char *cek_kata, char daftar_kata[400][200], int jumlah_kata) {
+    for (int i = 0; i < jumlah_kata; i++) {
+        if (strcmp(cek_data, daftar_kata[i]) == 0) {
+            return 1;
+        }
+    }
 int main(){
     char kata[200];
     FILE *file1 = fopen("lirik.txt", "r");
