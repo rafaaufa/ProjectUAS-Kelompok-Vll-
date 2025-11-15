@@ -95,4 +95,6 @@ void ADMIN_EDITDATA(data alat[],int *count){
     scanf("%d",&edit);
     getchar();
     for (int i = 0; i < *count ; i++){
-        
+        if(alat[i].id == edit){
+            idnya = 1;
+            
