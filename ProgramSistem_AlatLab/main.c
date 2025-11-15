@@ -8,5 +8,9 @@ int main(int argc,int *argv[]) {
     
     LIHAT_FILE(alat, &count);
 
+    if(argc != 3){
+        printf("Cara login : %s <username> <password>",argv[0]);
+        return 1;
+    }
 
 }
