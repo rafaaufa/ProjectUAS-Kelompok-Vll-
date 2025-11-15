@@ -18,7 +18,8 @@ int main(int argc,int *argv[]) {
     if (strcmp(username, "admin") == 0 && strcmp(password, "123") == 0) {
         printf("Login sebagai Admin berhasil!\n");
         printf("(Silahkan Tekan Enter)\n");
-
+        getchar();
+        ADMIN_MENU(alat,&count);
     }
 
 }
