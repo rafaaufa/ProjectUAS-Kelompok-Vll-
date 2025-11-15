@@ -94,4 +94,5 @@ void ADMIN_EDITDATA(data alat[],int *count){
     printf("Masukkan ID Yang Ingin Diedit : ");
     scanf("%d",&edit);
     getchar();
-    
+    for (int i = 0; i < *count ; i++){
+        
