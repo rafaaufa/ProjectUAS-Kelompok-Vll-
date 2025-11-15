@@ -142,5 +142,9 @@ void ADMIN_HAPUSDATA(data alat[],int *count){
         break; 
         }
     }
-
+    if(idnya == 0){
+        printf("ID Tidak Ditemukan!!\n");
+    }
+    SIMPAN_FILE(alat,*count);
+    
 }
