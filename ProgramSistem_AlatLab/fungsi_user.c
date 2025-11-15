@@ -78,3 +78,7 @@ void USER_LIHATTERSEDIA(data alat[],int count){
       printf("| %-5s| %-20s| %-15s| %-15s| %-6s| %-7s|\n",
         "ID", "Nama Alat", "Merek", "Model", "Tahun", "Jumlah");
       printf("---------------------------------------------------------------------------------\n");
+
+      for (int i = 0; i < count; i++){
+        if (alat[i].dipinjam == 0){
+            printf("| %-5u| %-20s| %-15s| %-15s| %-6u| %-7u|\n",
