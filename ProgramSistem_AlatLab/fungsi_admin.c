@@ -112,4 +112,5 @@ void ADMIN_EDITDATA(data alat[],int *count){
             printf("Silahkan Masukkan Tahun Produksi : ");
             scanf("%d",&alat[i].tahunproduksi);
             getchar();
-            
+            printf("Silahkan Masukkan Jumlah : ");
+            scanf("%d",&alat[i].jumlah);
