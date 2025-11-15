@@ -118,4 +118,9 @@ void ADMIN_EDITDATA(data alat[],int *count){
             break;
             }
         }
-        
+    if (idnya == 0){
+        printf("ID Tidak Ditemukan!!");
+    }
+    SIMPAN_FILE(alat,*count);
+}
+
