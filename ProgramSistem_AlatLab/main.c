@@ -12,5 +12,7 @@ int main(int argc,int *argv[]) {
         printf("Cara login : %s <username> <password>",argv[0]);
         return 1;
     }
+    char *username = argv[1];
+    char *password = argv[2];
 
 }
