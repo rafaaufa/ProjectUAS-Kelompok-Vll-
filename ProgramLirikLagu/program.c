@@ -35,5 +35,7 @@ int main(){
     FILE *file2 = fopen("kosa-kata.txt", "w");
 
     if (fgets(judul_baris, 200, file1) != NULL) {
-    printf("tesss");
+    fprintf(file2, "%s", judul_baris);
+    }
+    
 }
