@@ -55,7 +55,6 @@ void USER_PEMINJAMAN(data alat[],int *count){
         printf("Alat Berhasil Dipinjam!\n");
     }
     SIMPAN_FILE(alat,*count);
-    printf("\nTekan Enter Untuk Melanjutkan...");
     getchar();
 }
 
@@ -74,7 +73,6 @@ void USER_PENGEMBALIAN(data alat[],int *count){
         printf("Alat berhasil dikembalikan!\n");
     }
     SIMPAN_FILE(alat,*count);
-    printf("\nTekan Enter Untuk Melanjutkan...");
     getchar();
 }
 

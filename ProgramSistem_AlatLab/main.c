@@ -16,13 +16,13 @@ int main(int argc,char *argv[]){
     char *password = argv[2];
 
     if (strcmp(username, "admin") == 0 && strcmp(password, "123") == 0) {
-        printf("Login sebagai Admin berhasil!\n");
+        printf("Login sebagai Admin berhasil!\n\n");
         printf("(Silahkan Tekan Enter)\n");
         getchar();
         ADMIN_MENU(alat,&count);
     }
     else if (strcmp(username, "user") == 0 && strcmp(password, "123") == 0) {
-        printf("Login sebagai User berhasil!\n");
+        printf("Login sebagai User berhasil!\n\n");
         printf("(Silahkan Tekan Enter)\n");
         getchar();
         USER_MENU(alat,&count);
