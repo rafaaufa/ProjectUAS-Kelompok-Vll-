@@ -37,5 +37,7 @@ int main(){
     if (fgets(judul_baris, 200, file1) != NULL) {
     fprintf(file2, "%s", judul_baris);
     }
-    
+
+    while (fscanf(file1, "%s", kata) != EOF) {
+        bersihkan_kata(kata);
 }
