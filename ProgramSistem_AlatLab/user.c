@@ -15,6 +15,8 @@ void USER_MENU(data alat[],int *count){
         printf("[5.] KELUAR\n");
         printf("Silahkan Masukkan Pilihan : ");
         scanf("%d",&pilihan2);
+        getchar();
+        printf("\n------------------------------\n");
         switch (pilihan2){
             case 1 :USER_PEMINJAMAN(alat,count);
                     break;
@@ -53,6 +55,8 @@ void USER_PEMINJAMAN(data alat[],int *count){
         printf("Alat Berhasil Dipinjam!\n");
     }
     SIMPAN_FILE(alat,*count);
+    printf("\nTekan Enter Untuk Melanjutkan...");
+    getchar();
 }
 
 void USER_PENGEMBALIAN(data alat[],int *count){
@@ -70,6 +74,8 @@ void USER_PENGEMBALIAN(data alat[],int *count){
         printf("Alat berhasil dikembalikan!\n");
     }
     SIMPAN_FILE(alat,*count);
+    printf("\nTekan Enter Untuk Melanjutkan...");
+    getchar();
 }
 
 void USER_LIHATTERSEDIA(data alat[],int count){

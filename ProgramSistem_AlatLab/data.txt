@@ -1,0 +1,1 @@
+1|Teloskop|samsung|gcc-1234f|1945|3|0
