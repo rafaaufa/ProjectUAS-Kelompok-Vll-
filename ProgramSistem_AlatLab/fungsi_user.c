@@ -110,3 +110,6 @@ void USER_LIHATDIPINJAM(data alat[],int count){
                 alat[i].tahunproduksi,
                 alat[i].jumlah);
         }
+    }
+    printf("---------------------------------------------------------------------------------\n");
+}
