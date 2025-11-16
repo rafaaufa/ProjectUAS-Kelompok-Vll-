@@ -46,4 +46,8 @@ int main(){
             ketemu_kata_unik++;
         }
     }
+    fclose(file1);
+    fclose(file2);
+    fprintf("Kosa kata unik berhasil dibuat dalam file 'kosa-kata.txt'\n");
+    return 0;
 }
