@@ -42,5 +42,8 @@ int main(){
         bersihkan_kata(kata);
         if (cek_duplikat(kata, kosa_kata_unik, ketemu_kata_unik) == 0) {
             fprintf(file2, "%s\n", kata);
+            strcpy(kosa_kata_unik[ketemu_kata_unik], kata);
+            ketemu_kata_unik++;
         }
+    }
 }
