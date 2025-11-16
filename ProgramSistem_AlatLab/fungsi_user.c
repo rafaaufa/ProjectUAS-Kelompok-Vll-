@@ -46,9 +46,9 @@ void USER_PEMINJAMAN(data alat[],int *count){
         printf("Data Tidak Valid");
         return;
     }
-     if (alat[id-1].dipinjam == 1){
+    if (alat[id-1].dipinjam == 1){
         printf("Alat sudah dipinjam!\n");
-         } else {
+    } else {
         alat[id-1].dipinjam = 1; 
         printf("Alat Berhasil Dipinjam!\n");
     }
@@ -63,23 +63,23 @@ void USER_PENGEMBALIAN(data alat[],int *count){
         printf("Data Tidak Valid");
         return;
     }
-     if (alat[id-1].dipinjam == 0){
+    if (alat[id-1].dipinjam == 0){
         printf("Alat belum dipinjam!\n");
     } else {
-         alat[id-1].dipinjam = 0; 
+        alat[id-1].dipinjam = 0; 
         printf("Alat berhasil dikembalikan!\n");
     }
     SIMPAN_FILE(alat,*count);
 }
 
 void USER_LIHATTERSEDIA(data alat[],int count){
-     printf("\n\tDAFTAR ALAT YANG TERSEDIA\n");
-      printf("---------------------------------------------------------------------------------\n");
-      printf("| %-5s| %-20s| %-15s| %-15s| %-6s| %-7s|\n",
+    printf("\n\tDAFTAR ALAT YANG TERSEDIA\n");
+    printf("---------------------------------------------------------------------------------\n");
+    printf("| %-5s| %-20s| %-15s| %-15s| %-6s| %-7s|\n",
         "ID", "Nama Alat", "Merek", "Model", "Tahun", "Jumlah");
-      printf("---------------------------------------------------------------------------------\n");
+    printf("---------------------------------------------------------------------------------\n");
 
-      for (int i = 0; i < count; i++){
+    for (int i = 0; i < count; i++){
         if (alat[i].dipinjam == 0){
             printf("| %-5u| %-20s| %-15s| %-15s| %-6u| %-7u|\n",
                 alat[i].id,
