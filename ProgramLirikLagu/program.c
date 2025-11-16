@@ -40,4 +40,7 @@ int main(){
 
     while (fscanf(file1, "%s", kata) != EOF) {
         bersihkan_kata(kata);
+        if (cek_duplikat(kata, kosa_kata_unik, ketemu_kata_unik) == 0) {
+            fprintf(file2, "%s\n", kata);
+        }
 }
