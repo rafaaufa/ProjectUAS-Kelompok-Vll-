@@ -18,7 +18,7 @@ void bersihkan_kata(char *kata) {
 
 int cek_duplikat(char *cek_kata, char daftar_kata[400][200], int jumlah_kata) {
     for (int i = 0; i < jumlah_kata; i++) {
-        if (strcmp(cek_data, daftar_kata[i]) == 0) {
+        if (strcmp(cek_kata, daftar_kata[i]) == 0) {
             return 1;
         }
     }
@@ -48,6 +48,6 @@ int main(){
     }
     fclose(file1);
     fclose(file2);
-    fprintf("Kosa kata unik berhasil dibuat dalam file 'kosa-kata.txt'\n");
+    printf("Kosa kata unik berhasil dibuat dalam file 'kosa-kata.txt'\n");
     return 0;
 }
