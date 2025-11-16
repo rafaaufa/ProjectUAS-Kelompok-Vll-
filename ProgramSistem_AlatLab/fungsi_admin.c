@@ -88,3 +88,63 @@ void ADMIN_LIHATDATA(data alat[],int count){
     printf("---------------------------------------------------------------------------------\n");
 }
 
+void ADMIN_EDITDATA(data alat[],int *count){
+    int edit;
+    int idnya = 0;
+    printf("Masukkan ID Yang Ingin Diedit : ");
+    scanf("%d",&edit);
+    getchar();
+    for (int i = 0; i < *count ; i++){
+        if(alat[i].id == edit){
+            idnya = 1;
+            printf("Silahkan Masukkan Nama Alat : ");
+            fgets(alat[i].nama_alat,sizeof(alat[i].nama_alat),stdin);   
+            alat[i].nama_alat[strcspn(alat[i].nama_alat,"\n")] = 0;
+
+            printf("Silahkan Masukkan Merek : ");
+            fgets(alat[i].merek,sizeof(alat[i].merek),stdin);    
+            alat[i].merek[strcspn(alat[i].merek,"\n")] = 0;
+
+            printf("Silahkan Masukkan Model : ");
+            fgets(alat[i].model,sizeof(alat[i].model),stdin);    
+            alat[i].model[strcspn(alat[i].model,"\n")] = 0;
+
+            printf("Silahkan Masukkan Tahun Produksi : ");
+            scanf("%d",&alat[i].tahunproduksi);
+            getchar();
+            printf("Silahkan Masukkan Jumlah : ");
+            scanf("%d",&alat[i].jumlah);
+            printf("\nData dengan ID %d berhasil diedit!\n",edit);
+            break;
+            }
+        }
+    if (idnya == 0){
+        printf("ID Tidak Ditemukan!!");
+    }
+    SIMPAN_FILE(alat,*count);
+}
+
+void ADMIN_HAPUSDATA(data alat[],int *count){
+    int edit;
+    int idnya = 0;
+    printf("Masukkan ID Yang Ingin Dihapus : ");
+    scanf("%d",&edit);
+
+    
+    for(int i = 0 ; i < *count ; i++){
+        if(alat[i].id == edit){
+            idnya = 1;
+            for(int j = i ; j < (*count)-1; j++){
+            alat[j] = alat[j+1];    
+        }
+        (*count)--;
+        printf("Data dengan ID %d berhasil dihapus!\n", edit);
+        break; 
+        }
+    }
+    if(idnya == 0){
+        printf("ID Tidak Ditemukan!!\n");
+    }
+    SIMPAN_FILE(alat,*count);
+    
+}

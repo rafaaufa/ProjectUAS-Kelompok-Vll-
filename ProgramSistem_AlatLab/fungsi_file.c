@@ -26,11 +26,11 @@ void LIHAT_FILE(data alat[],int *count){
     if (file == NULL) {
     printf("Gagal Membuka File!\n");
     *count = 0;
-     return;
+    return;
     }
     int i = 0;
     while(fscanf(file,"%u|%[^|]|%[^|]|%[^|]|%u|%u|%u\n", 
-         &alat[i].id,
+        &alat[i].id,
         alat[i].nama_alat,
         alat[i].merek,
         alat[i].model,

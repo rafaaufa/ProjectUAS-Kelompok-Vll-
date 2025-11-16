@@ -28,7 +28,7 @@ void USER_MENU(data alat[],int *count){
                     SIMPAN_FILE(alat,*count);
                     printf("\nTerima Kasih ,Program Selesai");
                     break;
-                      default : printf("Eror!! SILAHKAN LOGIN ULANG");
+            default : printf("Eror!! SILAHKAN LOGIN ULANG");
         }
         if(pilihan2 != 5){ 
         printf("\nTekan Enter Untuk Kembali Ke Menu...");
@@ -70,4 +70,46 @@ void USER_PENGEMBALIAN(data alat[],int *count){
         printf("Alat berhasil dikembalikan!\n");
     }
     SIMPAN_FILE(alat,*count);
+}
+
+void USER_LIHATTERSEDIA(data alat[],int count){
+     printf("\n\tDAFTAR ALAT YANG TERSEDIA\n");
+      printf("---------------------------------------------------------------------------------\n");
+      printf("| %-5s| %-20s| %-15s| %-15s| %-6s| %-7s|\n",
+        "ID", "Nama Alat", "Merek", "Model", "Tahun", "Jumlah");
+      printf("---------------------------------------------------------------------------------\n");
+
+      for (int i = 0; i < count; i++){
+        if (alat[i].dipinjam == 0){
+            printf("| %-5u| %-20s| %-15s| %-15s| %-6u| %-7u|\n",
+                alat[i].id,
+                alat[i].nama_alat,
+                alat[i].merek,
+                alat[i].model,
+                alat[i].tahunproduksi,
+                alat[i].jumlah);
+        }
+    }
+    printf("---------------------------------------------------------------------------------\n");
+}
+
+void USER_LIHATDIPINJAM(data alat[],int count){
+    printf("\n\tDAFTAR ALAT YANG DIPINJAM\n");
+    printf("---------------------------------------------------------------------------------\n");
+    printf("| %-5s| %-20s| %-15s| %-15s| %-6s| %-7s|\n",
+        "ID", "Nama Alat", "Merek", "Model", "Tahun", "Jumlah");
+    printf("---------------------------------------------------------------------------------\n");
+
+    for (int i = 0; i < count; i++){
+        if (alat[i].dipinjam == 1){ 
+            printf("| %-5u| %-20s| %-15s| %-15s| %-6u| %-7u|\n",
+                alat[i].id,
+                alat[i].nama_alat,
+                alat[i].merek,
+                alat[i].model,
+                alat[i].tahunproduksi,
+                alat[i].jumlah);
+        }
+    }
+    printf("---------------------------------------------------------------------------------\n");
 }
