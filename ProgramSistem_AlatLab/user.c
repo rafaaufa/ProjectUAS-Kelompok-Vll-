@@ -79,6 +79,10 @@ void USER_PENGEMBALIAN(data alat[],int *count){
 }
 
 void USER_LIHATTERSEDIA(data alat[],int count){
+    if (count == 0){
+        printf("Belum Ada Data");
+        return;
+    }
     printf("\n\tDAFTAR ALAT YANG TERSEDIA\n");
     printf("---------------------------------------------------------------------------------\n");
     printf("| %-5s| %-20s| %-15s| %-15s| %-6s| %-7s|\n",
@@ -100,6 +104,10 @@ void USER_LIHATTERSEDIA(data alat[],int count){
 }
 
 void USER_LIHATDIPINJAM(data alat[],int count){
+    if (count == 0){
+        printf("Belum Ada Data");
+        return;
+    }
     printf("\n\tDAFTAR ALAT YANG DIPINJAM\n");
     printf("---------------------------------------------------------------------------------\n");
     printf("| %-5s| %-20s| %-15s| %-15s| %-6s| %-7s|\n",

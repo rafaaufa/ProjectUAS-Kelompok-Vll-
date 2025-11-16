@@ -1,1 +1,2 @@
-1|Teloskop|samsung|gcc-1234f|1945|3|0
+1|Teloskop|samsung|gcc-1234gt|2007|2|0
+2|jas lab|adidas|rr-ur733|1945|4|0
